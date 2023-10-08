@@ -5,8 +5,8 @@ on:
 
 env:
   SERVER_HOST: 89.223.120.225
-  SERVER_USER: root
-  SERVER_PATH: /home/dev/www/project-questionnaire
+  SERVER_USER: dev
+  SERVER_PATH: /dev/www/project-questionnaire
 
 jobs:
 
