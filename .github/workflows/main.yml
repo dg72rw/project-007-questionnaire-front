@@ -5,8 +5,8 @@ on:
 
 env:
   SERVER_HOST: 89.223.120.225
-  SERVER_USER: dev
-  SERVER_PATH: /dev/www/project-questionnaire
+  SERVER_USER: root
+  SERVER_PATH: /root/www/website-dir
 
 jobs:
 
@@ -28,4 +28,3 @@ jobs:
 
       # Deploy
       - run: rsync --archive --compress --progress . ${{ env.SERVER_USER }}@${{ env.SERVER_HOST }}:${{ env.SERVER_PATH }}
-
