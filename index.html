@@ -12,33 +12,39 @@
 
   <body>
     <div class="wrapper">
-      <div class="anketa">
-        <h1>Оформите заявку</h1>
+      <div class="form">
+        <h1 class="form__title">Оформите заявку</h1>
         <form action="">
-          <div class="super-block">
+          <div class="form-content">
 
-            <div class="block">
+            <div class="form-block">
 
-              <h2>Контактная информация</h2>
+              <h2 class="form-block__title">Контактная информация</h2>
 
               <div class="input-group">
-                <input type="text" id="fio" name="fio" required />
-                <label for="fio">Фамилия, имя и отчество</label>
+
+                <input class="input-group__input" id="fio" type="text" name="fio" placeholder=" " required />
+                <label class="input-group__label" for="fio">Фамилия, имя и отчество</label>
+
               </div>
 
               <div class="input-group">
-                <input type="tel" id="phone" name="phone" required />
-                <label for="phone">Номер телефона</label>
+
+                <input class="input-group__input" id="phone" type="tel" name="phone" placeholder=" " required />
+                <label class="input-group__label" for="phone">Номер телефона</label>
+
               </div>
 
               <div class="input-group">
-                <input type="email" id="email" name="email" required />
-                <label for="email">Электронная почта</label>
+
+                <input class="input-group__input" id="email" type="email" name="email" placeholder=" " required />
+                <label class="input-group__label" for="email">Электронная почта</label>
+
               </div>
 
             </div>
 
-            <div class="block">
+            <div class="form-block">
               <h2>Документы</h2>
               <input type="file" name="" id="">
               <input type="file" name="" id="">
@@ -46,7 +52,7 @@
             </div>
           </div>
         </form>
-        <span>v1.0.0</span>
+        <span>v0.1.0</span>
       </div>
     </div>
   </body>
